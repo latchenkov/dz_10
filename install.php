@@ -45,7 +45,16 @@ foreach ($query as $v){
         $query=$db->query("{$v}");
     }
 }
+
+$string =
+    "<?php \r\n"
+        . "define('DB_USER',"."'".$db_user."'"."); \r\n"
+        . "define('DB_PASS',"."'".$db_password."'"."); \r\n"
+        . "define('DB_HOST',"."'".$db_host."'"."); \r\n"
+        . "define('DB_NAME',"."'".$db_name."'"."); \r\n";
+if(!file_put_contents('setting.php', $string)) { installErrorHandler(); }
 $_SESSION['success']= TRUE;
+
 header("Location: install.php");
 exit;
 }

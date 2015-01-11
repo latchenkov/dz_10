@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2015-01-03 14:46:00
+<?php /* Smarty version 2.6.28, created on 2015-01-06 12:39:02
          compiled from install.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'install.tpl', 20, false),)), $this); ?>
@@ -15,7 +15,7 @@ unset($_smarty_tpl_vars);
         <input type="text" maxlength="40" value="" name="db_user" required >
     </p>
     <p>Password:</br>
-        <input type="text" maxlength="40" value="" name="db_password" required >
+        <input type="text" maxlength="40" value="" name="db_password" >
     </p>
     <p>Database:</br>
         <input type="text" maxlength="40" value="" name="db_name" required >

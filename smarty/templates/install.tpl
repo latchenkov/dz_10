@@ -7,7 +7,7 @@
         <input type="text" maxlength="40" value="" name="db_user" required >
     </p>
     <p>Password:</br>
-        <input type="text" maxlength="40" value="" name="db_password" required >
+        <input type="text" maxlength="40" value="" name="db_password" >
     </p>
     <p>Database:</br>
         <input type="text" maxlength="40" value="" name="db_name" required >
